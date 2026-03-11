@@ -1,0 +1,26 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 400px; /* légèrement plus large */
+  max-width: 50%;
+}
+
+.search-input {
+  flex: 1;
+  padding: 6px 10px;
+  font-family: 'Maiandra GD', sans-serif;
+  font-style: italic;
+  font-size: 11px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-button {
+  padding: 6px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}

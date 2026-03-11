@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background-color: #f5f5f5; /* blanc légèrement foncé */
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-left {
+  margin-left: -10px; /* décaler "Toutes les catégories" légèrement à gauche */
+}
+
+.navbar-center {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center; /* centré horizontalement */
+  flex: 1;
+}
+
+.navbar-center span {
+  cursor: pointer;
+}
+
+.navbar-center span:hover {
+  color: #FFD700; /* jaune or au survol */
+}
