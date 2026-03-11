@@ -37,11 +37,11 @@ function Header() {
         {/* Barre de recherche */}
         <SearchBar />
 
-        {/* Se connecter */}
+        {/* Mon compte */}
         <div className="header-button dropdown-wrapper"
              onMouseEnter={() => setUserOpen(true)}
              onMouseLeave={() => setUserOpen(false)}>
-          Se connecter
+          👤 Mon compte <span className="small-arrow">▼</span>
           {userOpen && (
             <div className="dropdown">
               <div className="dropdown-item">S'inscrire</div>
@@ -52,7 +52,7 @@ function Header() {
 
         {/* Panier */}
         <div className="header-button">
-          Panier (0)
+          🛒Panier (0)
         </div>
       </div>
     </header>
