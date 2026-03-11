@@ -1,3 +1,5 @@
+/* src/components/Navbar.css */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -27,3 +29,16 @@
 .navbar-center span:hover {
   color: #FFD700; /* jaune or au survol */
 }
+
+/* Indicateur pour le bouton sélectionné */
+.navbar-center .active::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  width: 100%;
+  background-color: #FFD700; /* jaune or */
+  border-radius: 2px;
+}
+
+/* CategoriesDropdown reste inchangé */
