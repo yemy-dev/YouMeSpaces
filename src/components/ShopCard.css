@@ -1,0 +1,29 @@
+/* src/components/ShopCard.css */
+.shop-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  overflow: hidden;
+  background-color: white;
+  cursor: pointer;
+}
+
+.shop-cover {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.shop-info {
+  padding: 10px;
+}
+
+.shop-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.shop-info p {
+  margin: 2px 0;
+  font-size: 12px;
+}

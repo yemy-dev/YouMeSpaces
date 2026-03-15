@@ -1,0 +1,16 @@
+/* src/pages/Sales.css */
+.sales-container {
+  padding: 20px 40px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+h2 {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}

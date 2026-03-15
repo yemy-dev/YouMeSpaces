@@ -1,20 +1,19 @@
 // src/components/Navbar.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import CategoriesDropdown from './CategoriesDropdown';
 
 function Navbar() {
-  // État pour le bouton actuellement sélectionné
   const [active, setActive] = useState('Accueil');
 
-  // Liste des boutons
   const buttons = [
-    'Accueil',
-    'Meilleures Ventes',
-    'Nouveautés',
-    'Soldes',
-    'Boutique sociale',
-    'Favoris ♡'
+    { name: 'Accueil', path: '/' },
+    { name: 'Meilleures Ventes', path: '/bestsales' },
+    { name: 'Nouveautés', path: '/newproducts' },
+    { name: 'Soldes', path: '/sales' },
+    { name: 'Boutique sociale', path: '/socialshop' },
+    { name: 'Favoris ♡', path: '/favorites' },
   ];
 
   return (
@@ -25,13 +24,14 @@ function Navbar() {
 
       <div className="navbar-center">
         {buttons.map((btn) => (
-          <span
-            key={btn}
-            className={active === btn ? 'active' : ''}
-            onClick={() => setActive(btn)}
+          <Link
+            key={btn.name}
+            to={btn.path}
+            className={active === btn.name ? 'active' : ''}
+            onClick={() => setActive(btn.name)}
           >
-            {btn}
-          </span>
+            {btn.name}
+          </Link>
         ))}
       </div>
     </nav>
